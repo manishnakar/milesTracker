@@ -61,10 +61,11 @@ $(document).one('pageinit', function(){
 							'<a href="#edit" id="editLink" data-miles="'+ runs[i]["miles"]+'" data-date="'+ runs[i]["date"]+'">Edit</a> | <a href="#" id="deleteLink" data-miles="'+ runs[i]["miles"]+'" data-date="'+ runs[i]["date"]+'" onClick="return confirm(\' Are you sure?\')">Delete</a>'
 						+'</div></li>')
 			};
-		$('#home').bind('pageInit', eventData, function(event) {
-			/* Act on the event */
+		
+		$('#home').bind('pageInit', function(event) {
 			$('stats').listView('refresh');
 		});
+
 
 		}
 		else{
