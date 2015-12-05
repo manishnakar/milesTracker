@@ -5,3 +5,15 @@ text-align: center;
 ul{
 	display: block;
 }
+
+.controls{
+
+	float:right;
+
+}
+
+#stats p{
+
+	color:red;
+	padding: 10px;
+}
